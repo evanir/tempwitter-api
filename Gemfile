@@ -46,3 +46,5 @@ group :development do
   # gem "spring"
 end
 
+gem "openweathermap-sdk", path: "/home/evanir/projetos/desafios_entrevistas/caiena/openweathermap-sdk/"
+gem "dotenv-rails"
