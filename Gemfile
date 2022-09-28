@@ -49,3 +49,5 @@ end
 
 gem "dotenv-rails"
 gem "openweathermap-sdk", path: "/home/evanir/projetos/desafios_entrevistas/caiena/openweathermap-sdk/"
+gem "twitter"
+gem 'omniauth-twitter2'
