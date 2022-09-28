@@ -44,7 +44,8 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem "awesome_print"
 end
 
-gem "openweathermap-sdk", path: "/home/evanir/projetos/desafios_entrevistas/caiena/openweathermap-sdk/"
 gem "dotenv-rails"
+gem "openweathermap-sdk", path: "/home/evanir/projetos/desafios_entrevistas/caiena/openweathermap-sdk/"
