@@ -1,24 +1,47 @@
-# README
+# Tempwitter-api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Bem-vindo ! ####
 
-Things you may want to cover:
+Esta API foi criada para a resolucao de um desafio técnico proposto pela Caiena. 
 
-* Ruby version
+####  *** Não use em produção ***
 
-* System dependencies
 
-* Configuration
+## Instalação
 
-* Database creation
+Instale a gem executando:
 
-* Database initialization
+    $ git clone https://github.com/evanir/tempwitter-api.git
+    $ bundle install
+    
+## Requerimentos
 
-* How to run the test suite
+É necessário criar uma conta e obter uma chave no https://home.openweathermap.org/api_keys!
+É necessário criar uma conta com Twitter e habilita-la como Desenvolvedor!
 
-* Services (job queues, cache servers, search engines, etc.)
+Renomeie o arquivo .env_example para .env e informe a chave obtida pelo OpenWeatherMap e Twitter:
 
-* Deployment instructions
+    OPENWEATHERMAP_KEY      =
+    TWITTER_CONSUMER_KEY    =
+    TWITTER_CONSUMER_SECRET =
+    TWITTER_ACCESS_TOKEN    =
+    TWITTER_ACCESS_SECRET   =
 
-* ...
+
+## Uso
+ 
+    curl --data "city_name=Campinas" -X POST http://localhost:3000/api/v1/twitter_forecast/tweet 
+  
+ou
+
+    curl --data "city_id=3448639" -X POST http://localhost:3000/api/v1/twitter_forecast/tweet
+  
+
+## Contribuições
+
+Bug reports e pull requests são bemvindos em GitHub at https://github.com/evanir/openweathermap-sdk.
+
+## TODO
+  1. Criar resposta para city_id ou city_name não localizados.
+  2. "Dockerizar" a api
+
