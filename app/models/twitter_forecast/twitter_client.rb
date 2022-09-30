@@ -1,5 +1,9 @@
+# frozen_string_literal: true
+
 # module Twitter
 module TwitterForecast
+  # module TwitterClient
+  # Cria a conexão com a API Twitter
   module TwitterClient
     def client
       @client ||= Twitter::REST::Client.new do |config|
