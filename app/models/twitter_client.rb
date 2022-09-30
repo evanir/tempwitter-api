@@ -1,7 +1,7 @@
 class TwitterClient
 
   def initialize
-
+    client
   end
 
   def client

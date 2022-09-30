@@ -1,7 +1,7 @@
 PATH
   remote: /home/evanir/projetos/desafios_entrevistas/caiena/openweathermap-sdk
   specs:
-    openweathermap-sdk (0.1.0)
+    openweathermap-sdk (0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -73,10 +73,7 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
-    aes_key_wrap (1.1.0)
-    attr_required (1.0.1)
     awesome_print (1.9.2)
-    bindata (2.4.11)
     bootsnap (1.13.0)
       msgpack (~> 1.2)
     buftok (0.2.0)
@@ -112,17 +109,11 @@ GEM
     http-parser (1.2.3)
       ffi-compiler (>= 1.0, < 2.0)
     http_parser.rb (0.6.0)
-    httpclient (2.8.3)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
     irb (1.4.1)
       reline (>= 0.3.0)
-    json-jwt (1.15.3)
-      activesupport (>= 4.2)
-      aes_key_wrap
-      bindata
-      httpclient
     loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -159,12 +150,6 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.4)
-    rack-oauth2 (1.21.3)
-      activesupport
-      attr_required
-      httpclient
-      json-jwt (>= 1.11.0)
-      rack (>= 2.1.0)
     rack-test (2.0.2)
       rack (>= 1.3)
     rails (7.0.4)
@@ -213,8 +198,6 @@ GEM
       multipart-post (~> 2.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
-    twitter_oauth2 (0.5.1)
-      rack-oauth2 (~> 1.19)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     unf (0.1.4)
@@ -238,7 +221,6 @@ DEPENDENCIES
   rails (~> 7.0.4)
   sqlite3 (~> 1.4)
   twitter
-  twitter_oauth2
   tzinfo-data
 
 RUBY VERSION
