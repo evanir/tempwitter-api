@@ -11,7 +11,7 @@ module TwitterForecast
       # @open_weather_forecast.perform_requests ???????
       unless @open_weather_forecast.valid?
         @error    = @open_weather_forecast.error
-        @status_message = @open_weather_forecast.error.message
+        @status_message = I18n.transliterate(@open_weather_forecast.error.message)
         @status_code    = 422
       end
     end
@@ -20,10 +20,10 @@ module TwitterForecast
       return unless @open_weather_forecast.valid?
       tweet = client.update(summary_text)
       if tweet.id.present?
-        @status_message = "Tweet ##{tweet.id} enviado com sucesso!"
+        @status_message = "Tweet enviado com sucesso!"
         @status_code = :ok
       else
-        @status_message = "Falha ao enviar o tweet! #{tweet.id}"
+        @status_message = "Falha ao enviar o tweet!"
         @status_code = 422
       end
     end
@@ -86,24 +86,4 @@ module TwitterForecast
     end
 
   end
-
-
-
-    class Publisher
-      include TwitterClient
-      #  include Forecast
-    #  include Concerns::Tweet
-
-      def initialize(options)
-
-      end
-
-      def tweet
-         publish_summary
-      end
-
-      def print_info
-        puts "esta na class Twitter"
-      end
-    end
 end
