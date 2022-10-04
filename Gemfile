@@ -52,4 +52,4 @@ end
 gem 'dotenv-rails'
 gem 'openweathermap-sdk', git: 'https://github.com/evanir/openweathermap-sdk'
 gem 'twitter'
-# gem 'twitter_oauth2'
+gem 'pg'
