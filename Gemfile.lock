@@ -238,6 +238,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   bootsnap
+  bundler
   debug
   dotenv-rails
   openweathermap-sdk!
