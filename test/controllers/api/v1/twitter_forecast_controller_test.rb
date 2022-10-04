@@ -1,5 +1,5 @@
 require 'test_helper'
-require 'webmock/minitest'
+# require 'webmock/minitest'
 
 module Api::V1
   class TwitterForecastControllerTest  < ActionDispatch::IntegrationTest
