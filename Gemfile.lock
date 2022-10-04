@@ -1,5 +1,6 @@
-PATH
-  remote: /home/evanir/projetos/desafios_entrevistas/caiena/openweathermap-sdk
+GIT
+  remote: https://github.com/evanir/openweathermap-sdk
+  revision: bc96a8b3dd1f4c3312c70506dfd3d21d05b2c017
   specs:
     openweathermap-sdk (0.1.1)
 

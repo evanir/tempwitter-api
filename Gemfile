@@ -50,6 +50,6 @@ group :development do
 end
 
 gem 'dotenv-rails'
-gem 'openweathermap-sdk', path: '/home/evanir/projetos/desafios_entrevistas/caiena/openweathermap-sdk/'
+gem 'openweathermap-sdk', git: 'https://github.com/evanir/openweathermap-sdk'
 gem 'twitter'
 # gem 'twitter_oauth2'
