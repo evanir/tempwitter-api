@@ -1,4 +1,6 @@
 require 'test_helper'
+require 'webmock/minitest'
+
 module Api::V1
   class TwitterForecastControllerTest  < ActionDispatch::IntegrationTest
     test "should post forecast with city_name"  do
