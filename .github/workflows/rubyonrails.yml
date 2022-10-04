@@ -29,6 +29,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       # Add or replace dependency steps here
+      - name: Bundler Audit Action
+        uses: andrewmcodes/bundler-audit-action@v0.1.0
       #- name: unset deployment 
       #  run:  bin/bundle config unset deployment
       - name: Install Ruby and gems
@@ -52,6 +54,8 @@ jobs:
         with:
           bundler-cache: true
       # Add or replace any other lints here
+      - name: Bundler Audit Action
+        uses: andrewmcodes/bundler-audit-action@v0.1.0      
       - name: Security audit dependencies
         run: bin/bundler-audit --update
       - name: Security audit application code
